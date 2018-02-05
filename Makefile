@@ -42,7 +42,7 @@ test: node_modules/.uptodate
 	$(GULP) test
 
 .PHONY: lint
-lint:
+lint: .pydeps
 	flake8 h
 
 ################################################################################
